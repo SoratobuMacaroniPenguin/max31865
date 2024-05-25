@@ -1,5 +1,5 @@
-# Adapted from the adafruit_max31865 ciircuit python library
 # Micropython module for the MAX31865 platinum RTD temperature sensor.
+# Adapted from the adafruit_max31865 CircuitPython library
 # * Original Author(s): Tony DiCola
 # * Modified by: Sufyan Mukadam
 # Original Repo: https://github.com/adafruit/Adafruit_CircuitPython_MAX31865.git
