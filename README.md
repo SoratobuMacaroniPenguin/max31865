@@ -5,7 +5,6 @@ Ported from the Adafruit CircuitPython Library to work with Micropython. The ori
 
 Tested on the RaspberryPi PicoW boards.
 
-----------
 Original Adafruit (for CircuitPython).
 First Modify sufyanaslam198 (for Micropython).
 Second Modify SoratobuMacaroniPenguin GitHub_ID SoratobuMacaroniPenguin.
