@@ -7,8 +7,9 @@ Tested on the RaspberryPi PicoW boards.
 
 -----
 write SoratobuMacaroniPenguin
-+ Original Adafruit (for CircuitPython).
++ Original Library Adafruit (for CircuitPython).
 + First Modify sufyanaslam198 (for Micropython).
 + Second Modify SoratobuMacaroniPenguin GitHub_ID SoratobuMacaroniPenguin.
-+ Tested on Wemos mini boards esp8266.
-+ Micropython-1.23.0.
+++ Tested on Wemos mini boards esp8266.
+++ Used MAX31865 board = Adafruit compatible board 
+++ Used firmware Micropython-1.23.0.
