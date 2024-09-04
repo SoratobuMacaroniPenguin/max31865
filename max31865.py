@@ -5,7 +5,7 @@
 # Original Repo: https://github.com/adafruit/Adafruit_CircuitPython_MAX31865.git
 # Released under the MIT License (MIT) - see LICENSE file
 # * Modified by: SoratobuMacaroniPenguin GitHub_ID SoratobuMacaroniPenguin 
-# 
+# for Micropython-1.23.0
 
 import math
 import time
