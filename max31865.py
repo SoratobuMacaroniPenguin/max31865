@@ -4,7 +4,8 @@
 # * Modified by: Sufyan Mukadam
 # Original Repo: https://github.com/adafruit/Adafruit_CircuitPython_MAX31865.git
 # Released under the MIT License (MIT) - see LICENSE file
-# * Modified by: SoratobuMacaroniPenguin
+# * Modified by: SoratobuMacaroniPenguin GitHub_ID SoratobuMacaroniPenguin 
+# 
 
 import math
 import time
