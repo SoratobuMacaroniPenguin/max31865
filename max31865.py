@@ -4,13 +4,15 @@
 # * Modified by: Sufyan Mukadam
 # Original Repo: https://github.com/adafruit/Adafruit_CircuitPython_MAX31865.git
 # Released under the MIT License (MIT) - see LICENSE file
+# * Modified by: SoratobuMacaroniPenguin
 
 import math
 import time
 
 from micropython import const
 
-from machine import Pin, SPI
+from machine import Pin
+from machine import SoftSPI as SPI
 
 # Register and other constant values:
 _MAX31865_CONFIG_REG = const(0x00)
@@ -59,8 +61,8 @@ class Max31865:
 
         # Setup SPI
         self.cs = Pin(cs, mode=Pin.OUT)
-        self.cs.low()
-        self._device = SPI(bus, baudrate=200000, polarity=polarity, phase=1,
+        self.cs.off()
+        self._device = SPI(baudrate=200000, polarity=polarity, phase=1,
                            firstbit=SPI.MSB, sck=Pin(sckPin),
                            mosi=Pin(mosiPin), miso=Pin(misoPin))
 
