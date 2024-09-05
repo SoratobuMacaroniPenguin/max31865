@@ -97,34 +97,34 @@ class Max31865:
 
     def _read_u8(self, address):
         # Read an 8-bit unsigned value from the specified 8-bit address.
-        self.cs.low()
+        self.cs.off()
         # buffer = bytearray(3)
         self._BUFFER[0] = address & 0x7F
         self._device.write(self._BUFFER[0:1])
         self._device.readinto(self._BUFFER)
-        self.cs.high()
+        self.cs.on()
         return self._BUFFER[0]
 
     def _read_u16(self, address):
         # Read a 16-bit BE unsigned value from the specified 8-bit address.
-        self.cs.low()
+        self.cs.off()
         # buffer = bytearray(3)
         self._BUFFER[0] = address & 0x7F
 
         self._device.write(self._BUFFER[0:1])
         self._device.readinto(self._BUFFER)
-        self.cs.high()
+        self.cs.on()
         return (self._BUFFER[0] << 8) | self._BUFFER[1]
 
     def _write_u8(self, address, val):
         # Write an 8-bit unsigned value to the specified 8-bit address.
-        self.cs.low()
+        self.cs.off()
         address_byte = address | 0x80
         # buffer = bytearray(2)
         self._BUFFER[0] = address_byte
         self._BUFFER[1] = val
         self._device.write(self._BUFFER)
-        self.cs.high()
+        self.cs.on()
 
     @property
     def bias(self):
